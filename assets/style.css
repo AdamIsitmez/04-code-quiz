@@ -1,0 +1,111 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2 {
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+button {
+    font-family: inherit;
+    font-weight: bolder;
+    margin: 5px;
+    padding: 5px;
+    width: 200px;
+    color: black;
+    background-color: white;
+    border: solid 2px #af86b6;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #ba9fc6;
+
+}
+
+#get-ready,
+#start-again {
+    visibility: hidden;
+    position: absolute;
+    top: 50px;
+    left: 50vw;
+    transform: translateX(-50%);
+}
+
+.question {
+    display: none;
+    transition-delay: 500ms;
+}
+
+#welcome>* {
+    margin: 5px;
+}
+
+#welcome {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.options {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+#q1,
+#q2,
+#q3,
+#q4,
+#q5,
+#q6,
+#q7,
+#q8,
+#q9,
+#q10 {
+    position: absolute;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+}
+
+#highscore {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition-delay: 500ms;
+}
+
+#highscore>* {
+    margin: 10px;
+}
+
+#highscore-link,
+#start-again {
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px;
+    border: solid 2px #af86b6;
+    font-weight: bolder;
+}
+
+#highscore-link:hover,
+#start-again:hover {
+    cursor: pointer;
+    background-color: #ba9fc6;
+}

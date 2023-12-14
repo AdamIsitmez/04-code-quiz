@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <header>
+        <p id="highscore-link">View high scores</p>
+        <div id="timer"></div>
+    </header>
+    <main>
+        <div id="welcome">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
+                answers will penalize your time by 5 seconds!</p>
+            <button id="start-quiz">Start Quiz</button>
+        </div>
+        <div id="get-ready">
+            <h2>Get ready!</h2>
+        </div>
+        <div id="start-again">
+            <h2>Start Again!</h2>
+        </div>
+        <section>
+            <div class="question" id="q1">
+                <h2>Inside which HTML element do we put JavaScript?</h2>
+                <div class="options">
+                    <button type="button" data-result="incorrect">&ltp&gt</button>
+                    <button type="button" data-result="correct">&ltscript&gt</button>
+                    <button type="button" data-result="incorrect">&ltlink&gt</button>
+                    <button type="button" data-result="incorrect">&ltbody&gt</button>
+                </div>
+            </div>
+            <div class="question" id="q2">
+                <h2>Which one of these is not a primitive data type?</h2>
+                <div class="options">
+                    <button type="button" data-result="correct">Object</button>
+                    <button type="button" data-result="incorrect">number</button>
+                    <button type="button" data-result="incorrect">string</button>
+                    <button type="button" data-result="incorrect">boolean</button>
+                </div>
+            </div>
+            <div class="question" id="q3">
+                <h2>Which of the following is not a property of the window object?</h2>
+                <div class="options">
+                    <button type="button" data-result="incorrect">document</button>
+                    <button type="button" data-result="incorrect">navigator</button>
+                    <button type="button" data-result="correct">menu</button>
+                    <button type="button" data-result="incorrect">history</button>
+                </div>
+            </div>
+            <div class="question" id="q4">
+                <h2>Which statement supplies the value of the function?</h2>
+                <div class="options">
+                    <button type="button" data-result="correct">return</button>
+                    <button type="button" data-result="incorrect">cancel</button>
+                    <button type="button" data-result="incorrect">continue</button>
+                    <button type="button" data-result="incorrect">valueOf</button>
+                </div>
+            </div>
+            <div class="question" id="q5">
+                <h2>How can you add a comment in JavaScript</h2>
+                <div class="options">
+                    <button type="button" data-result="correct">//This is a comment</button>
+                    <button type="button" data-result="incorrect">'This is a comment</button>
+                    <button type="button" data-result="incorrect">&lt!--This is a comment--&gt</button>
+                    <button type="button" data-result="incorrect">"This is a comment"</button>
+                </div>
+            </div>
+            <div class="question" id="q6">
+                <h2>JavaScript is the same as Java</h2>
+                <div class="options">
+                    <button type="button" data-result="correct">False</button>
+                    <button type="button" data-result="incorrect">True</button>
+                </div>
+            </div>
+            <div class="question" id="q7">
+                <h2>Which operator is used to assign a value to a variable?</h2>
+                <div class="options">
+                    <button type="button" data-result="incorrect">-</button>
+                    <button type="button" data-result="incorrect">==</button>
+                    <button type="button" data-result="correct">=</button>
+                    <button type="button" data-result="incorrect">*</button>
+                </div>
+            </div>
+            <div class="question" id="q8">
+                <h2>How do you declare a variable in JavaScript?</h2>
+                <div class="options">
+                    <button type="button" data-result="incorrect">v count</button>
+                    <button type="button" data-result="correct">var count</button>
+                    <button type="button" data-result="incorrect">variable count</button>
+                    <button type="button" data-result="incorrect">string count</button>
+                </div>
+            </div>
+            <div class="question" id="q9">
+                <h2>What does DOM stand for in JavaScript?</h2>
+                <div class="options">
+                    <button type="button" data-result="incorrect">Database Object Model</button>
+                    <button type="button" data-result="incorrect">Document Oriented Model</button>
+                    <button type="button" data-result="incorrect">Data Object Model</button>
+                    <button type="button" data-result="correct">Document Object Model</button>
+                </div>
+            </div>
+            <div class="question" id="q10">
+                <h2>What does the 'this' keyword refer to in JavaScript?</h2>
+                <div class="options">
+                    <button type="button" data-result="incorrect">The current function</button>
+                    <button type="button" data-result="incorrect">The parent function</button>
+                    <button type="button" data-result="correct">The object that is executing the current
+                        function</button>
+                    <button type="button" data-result="incorrect">The global object</button>
+                </div>
+            </div>
+        </section>
+        <section id="highscore">
+            <h2>Well done!</h2>
+            <p></p>
+            <div>
+                <label for="initials">Enter you initials:</label>
+                <input type="text" id="initials">
+                <button id="submit">Submit</button>
+                <div id="highscore-list">
+                    <p>Highscores!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/scripts.js"></script>
+</body>
+
+</html>
