@@ -39,6 +39,10 @@ button:hover {
     transform: translateX(-50%);
 }
 
+#start-again {
+    transition-delay: 500ms;
+}
+
 .question {
     display: none;
     transition-delay: 500ms;
